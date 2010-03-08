@@ -3,10 +3,10 @@
 ## Usage
 This is for working with the sample [compass css] [compass_core_website] project.  The sass mixin is in the src/partials directory and is to be used with images/silk-sprite.png.  These can be used in any project.
 
-  $ (sudo) gem install compass
-  $ git clone http://github.com/zarzax/silk-sass-mixin.git
-  $ cd silk-sass-mixin
-  $ compass -w
+    $ (sudo) gem install compass
+    $ git clone http://github.com/zarzax/silk-sass-mixin.git
+    $ cd silk-sass-mixin
+    $ compass -w
   
 Open index.html in a web browser.
 
