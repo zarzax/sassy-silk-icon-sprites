@@ -1,8 +1,12 @@
+body { height: 100%; width: 100%; }
+
 span { display: block; float: left; height: 20px; width: 20px; margin: 2px; }
 
 p { color: #333; }
 
 a, a:visited { color: #666; text-decoration: none; }
+
+.wrapper { margin: 0 auto; overflow: auto; width: 610px; }
 
 .about { background-color: #EFF6FF; border: 1px solid #d6e9ff; overflow: auto; width: 596px; margin-bottom: 10px; padding: 2px; }
 
