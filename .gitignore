@@ -1,14 +1,1 @@
-*~
-*.tmproj
-
-
-src\.sass-cache
-src\.sass-cache\*
-
-
-src/.sass-cache
-src/.sass-cache/*
-
-
-.\src\.sass-cache
-.\src\.sass-cache\*
+.sass-cache
