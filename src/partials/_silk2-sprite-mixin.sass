@@ -1,0 +1,206 @@
+$silk2_image_default_width: 16px !default
+$silk2_image_default_height: 16px !default
+$silk2_image_default_margin: 0px !default
+$silk2_image: unquote("silk2-sprite.png") !default
+
+// Simplest use: +silk-sprite("icons-32.png", 1)
+=silk2-sprite($img, $col, $row: 1, $width: $silk2_image_default_width, $height: $silk2_image_default_height, $margin: $silk2_image_default_margin)
+  $x: ($col - 1) * -$width - ($col - 1) * $margin
+  $y: ($row - 1) * -$height - ($row - 1) * $margin
+  background: image_url($img) no-repeat $x $y
+  width: $width
+  height: $height
+  overflow: hidden
+
+=ss_add_delete
+  +silk2-sprite($silk2_image, 1, 1)
+
+=ss_application_font
+  +silk2-sprite($silk2_image, 2, 1)
+
+=ss_arrows_up_down
+  +silk2-sprite($silk2_image, 3, 1)
+
+=ss_border_delete_all
+  +silk2-sprite($silk2_image, 4, 1)
+
+=ss_border_edit_all
+  +silk2-sprite($silk2_image, 5, 1)
+
+=ss_bullet_cog
+  +silk2-sprite($silk2_image, 6, 1)
+
+=ss_bullets_black
+  +silk2-sprite($silk2_image, 7, 1)
+
+=ss_chart_ltr_bar_add
+  +silk2-sprite($silk2_image, 8, 1)
+
+=ss_chart_ltr_bar_delete
+  +silk2-sprite($silk2_image, 9, 1)
+
+=ss_chart_ltr_bar_edit
+  +silk2-sprite($silk2_image, 10, 1)
+
+=ss_chart_ltr_bar
+  +silk2-sprite($silk2_image, 11, 1)
+
+=ss_check_checked_gray
+  +silk2-sprite($silk2_image, 12, 1)
+
+=ss_check_checked_gray_add
+  +silk2-sprite($silk2_image, 13, 1)
+
+=ss_check_checked_gray_delete
+  +silk2-sprite($silk2_image, 14, 1)
+
+=ss_check_checked_green
+  +silk2-sprite($silk2_image, 15, 1)
+
+=ss_check_checked_green_add
+  +silk2-sprite($silk2_image, 16, 1)
+
+=ss_check_checked_green_delete
+  +silk2-sprite($silk2_image, 17, 1)
+
+=ss_check_unchecked
+  +silk2-sprite($silk2_image, 18, 1)
+
+=ss_check_unchecked_add
+  +silk2-sprite($silk2_image, 19, 1)
+
+=ss_check_unchecked_delete
+  +silk2-sprite($silk2_image, 20, 1)
+
+=ss_clipboard_delete
+  +silk2-sprite($silk2_image, 21, 1)
+
+=ss_clipboard_empty
+  +silk2-sprite($silk2_image, 22, 1)
+
+=ss_color_swatch_background
+  +silk2-sprite($silk2_image, 23, 1)
+
+=ss_font_gray
+  +silk2-sprite($silk2_image, 24, 1)
+
+=ss_font_green
+  +silk2-sprite($silk2_image, 25, 1)
+
+=ss_font_highlight
+  +silk2-sprite($silk2_image, 26, 1)
+
+=ss_font_highlight_add
+  +silk2-sprite($silk2_image, 27, 1)
+
+=ss_font_highlight_delete
+  +silk2-sprite($silk2_image, 28, 1)
+
+=ss_font_highlight_edit
+  +silk2-sprite($silk2_image, 29, 1)
+
+=ss_font_red
+  +silk2-sprite($silk2_image, 30, 1)
+
+=ss_image_button
+  +silk2-sprite($silk2_image, 31, 1)
+
+=ss_layout_measurement
+  +silk2-sprite($silk2_image, 32, 1)
+
+=ss_lightbox
+  +silk2-sprite($silk2_image, 33, 1)
+
+=ss_map_measurement
+  +silk2-sprite($silk2_image, 34, 1)
+
+=ss_package_rename
+  +silk2-sprite($silk2_image, 35, 1)
+
+=ss_page_white_delete
+  +silk2-sprite($silk2_image, 36, 1)
+
+=ss_page_white_edit
+  +silk2-sprite($silk2_image, 37, 1)
+
+=ss_page_white_error
+  +silk2-sprite($silk2_image, 38, 1)
+
+=ss_photo_crop
+  +silk2-sprite($silk2_image, 39, 1)
+
+=ss_picture_measurement
+  +silk2-sprite($silk2_image, 40, 1)
+
+=ss_picture_caption
+  +silk2-sprite($silk2_image, 41, 1)
+
+=ss_plus_minus
+  +silk2-sprite($silk2_image, 42, 1)
+
+=ss_radio_checked
+  +silk2-sprite($silk2_image, 43, 1)
+
+=ss_radio_checked_add
+  +silk2-sprite($silk2_image, 44, 1)
+
+=ss_radio_checked_delete
+  +silk2-sprite($silk2_image, 45, 1)
+
+=ss_radio_unchecked
+  +silk2-sprite($silk2_image, 46, 1)
+
+=ss_radio_unchecked_add
+  +silk2-sprite($silk2_image, 47, 1)
+
+=ss_radio_unchecked_delete
+  +silk2-sprite($silk2_image, 48, 1)
+
+=ss_select_add
+  +silk2-sprite($silk2_image, 49, 1)
+
+=ss_select_delete
+  +silk2-sprite($silk2_image, 50, 1)
+
+=ss_select_edit
+  +silk2-sprite($silk2_image, 51, 1)
+
+=ss_select_multiple_add
+  +silk2-sprite($silk2_image, 52, 1)
+
+=ss_select_multiple_delete
+  +silk2-sprite($silk2_image, 53, 1)
+
+=ss_select_multiple_edit
+  +silk2-sprite($silk2_image, 54, 1)
+
+=ss_select_multiple
+  +silk2-sprite($silk2_image, 55, 1)
+
+=ss_select
+  +silk2-sprite($silk2_image, 56, 1)
+
+=ss_selection_blue
+  +silk2-sprite($silk2_image, 57, 1)
+
+=ss_selection_green
+  +silk2-sprite($silk2_image, 58, 1)
+
+=ss_selection_red
+  +silk2-sprite($silk2_image, 59, 1)
+
+=ss_table_lock
+  +silk2-sprite($silk2_image, 60, 1)
+
+=ss_table_repair
+  +silk2-sprite($silk2_image, 61, 1)
+
+=ss_table_row_add
+  +silk2-sprite($silk2_image, 62, 1)
+
+=ss_table_edit_cell
+  +silk2-sprite($silk2_image, 63, 1)
+
+=ss_text_replace
+  +silk2-sprite($silk2_image, 64, 1)
+
